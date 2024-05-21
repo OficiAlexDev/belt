@@ -5,7 +5,7 @@
 
 class Infrared {
 public:
-  Infrared(byte digitalPin,uint8_t analogPin);
+  Infrared(byte digitalPin, uint8_t analogPin);
   void init();
   int digital();
   int analog();

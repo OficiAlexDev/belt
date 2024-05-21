@@ -1,6 +1,7 @@
 #include "Arduino.h"
 #include "Motor.h"
 
+//MOTOR CONSTRUCTOR
 Motor::Motor(byte pinActivator_1_2, byte enter_1, byte enter_2) {
   this->pinActivator_1_2 = pinActivator_1_2;
   this->enter_1 = enter_1;

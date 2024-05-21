@@ -1,15 +1,15 @@
 # Belt - OOP
  Arduino belt project!
  
-## Autores
+## Creators
 
-- [Alex]()
+- [Alex](https://oficialexdev.github.io/portfolio)
 - [Leticia]()
 - [Marlon]()
 - [Thayla]()
 
-## Ideas
+## Ideas to make better!!
 
 `
-IDEA!!! HOW LOOKS WE CANNOT USE MULTITHREAD IN ARDUINO DONT USE ANY DELAY IN CODE, BUT USE SOMETHING LIKE DELTA TIME OF UNITY TO CALC TIME AND ACTIVE ANY THING WITHOUT FREEZE ALL CODE
+THINKING BOUT
 `
