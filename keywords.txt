@@ -1,0 +1,5 @@
+distance LITERAL1
+analog KEYWORD1
+digital KEYWORD2
+close KEYWORD3
+openValue KEYWORD3

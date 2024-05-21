@@ -54,7 +54,7 @@ void loop() {
     timeDetectUltrasonic = currentMilis;
     //DEFINING LAST DISTANCE
     lastUltrasonicDetect = distance;
-    //ANALOG READ < 200 WE HAVE SURE IS A WHITE CUBE
+    //CHECK TIME LAST WHITE IS VALID
     if (lastWhiteInfrared >= currentMilis - TIME_INFRARED_ULTRASONIC) {
       //CLOSE RIGHT STICK AND COUNT MORE ONE TO WHITE
       white++;
@@ -62,7 +62,7 @@ void loop() {
       delay(250);
       servoRight.close();
     } else {
-      //INVERSE FOR LEFT
+      //REVERSE FOR LEFT
       black++;
       servoRight.open();
       delay(250);
