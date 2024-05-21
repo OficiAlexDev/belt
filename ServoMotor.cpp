@@ -2,19 +2,21 @@
 #include "ServoMotor.h"
 #include <Servo.h>
 
-void ServoMotor::init(byte pin) {
+void ServoMotor::init(byte pin, byte open, byte close) {
   this->pin = pin;
+  openValue = open;
+  closeValue = close;
   servo.attach(pin, 500, 2500);
 }
 
-void ServoMotor::to0() {
-  servo.write(0);
+void ServoMotor::rotateTo(int to) {
+  servo.write(to);
 }
 
-void ServoMotor::to90() {
-  servo.write(90);
+void ServoMotor::open() {
+  servo.write(openValue);
 }
 
-void ServoMotor::to180() {
-  servo.write(180);
+void ServoMotor::close() {
+  servo.write(closeValue);
 }

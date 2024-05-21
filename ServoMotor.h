@@ -6,12 +6,14 @@
 
 class ServoMotor {
 public:
-  void init(byte pin);
-  void to0();
-  void to90();
-  void to180();
+  void init(byte pin, byte open, byte close);
+  void rotateTo(int to);
+  void open();
+  void close();
 private:
   byte pin;
+  byte openValue;
+  byte closeValue;
   Servo servo;
 };
 
