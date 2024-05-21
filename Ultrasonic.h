@@ -5,8 +5,11 @@
 
 class Ultrasonic {
 public:
-  Ultrasonic(byte trigger,byte echo);
+  //DEFINE TRIGGER AND ECHO PINS
+  Ultrasonic(byte trigger, byte echo);
+  //DEFINE PINS MODE
   void init();
+  //READ DISTANCE IN CM
   float distance();
 private:
   byte trigger;

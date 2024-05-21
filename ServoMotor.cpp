@@ -2,18 +2,31 @@
 #include "ServoMotor.h"
 #include "Servo.h"
 
-void ServoMotor::init(byte pin, byte open, byte close) {
+bool ServoMotor::validValue(byte value) {
+  return value > -1 && value < 181;
+}
+
+ServoMotor::ServoMotor(byte pin, byte open, byte close) {
   this->pin = pin;
-  openValue = open;
-  closeValue = close;
+  if (validValue(open)) {
+    openValue = open;
+  }
+  //TODO - LEARN HOW THROW EXCEPTIONS
+  if (validValue(close)) {
+    closeValue = close;
+  }
+  //TODO - LEARN HOW THROW EXCEPTIONS
+}
+
+void ServoMotor::init() {
   servo.attach(pin, 500, 2500);
 }
 
 void ServoMotor::rotateTo(int to) {
-  if (to > -1 && to < 181) {
+  if (validValue(to)) {
     servo.write(to);
   }
-  //TODO LEARN HOW THROW EXCEPTIONS
+  //TODO - LEARN HOW THROW EXCEPTIONS
 }
 
 void ServoMotor::open() {

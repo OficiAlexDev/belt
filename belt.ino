@@ -21,8 +21,8 @@ Motor motor(11, 12, 13);
 Ultrasonic ultrasonic(2, 3);
 Infrared infrared(7, A0);
 LCD lcd(0x3f, 16, 2);
-ServoMotor servoLeft;
-ServoMotor servoRight;
+ServoMotor servoLeft(9, 90, 0);
+ServoMotor servoRight(10, 90, 180);
 //COUTER VARIABLES
 int white = 0, black = 0;
 //TIME CONTROLL VARIABLES
@@ -33,8 +33,8 @@ void setup() {
   motor.init();
   ultrasonic.init();
   infrared.init();
-  servoLeft.init(9, 90, 0);
-  servoRight.init(10, 90, 180);
+  servoLeft.init();
+  servoRight.init();
 }
 
 void loop() {

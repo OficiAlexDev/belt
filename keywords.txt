@@ -1,5 +1,5 @@
-distance LITERAL1
-analog KEYWORD1
-digital KEYWORD2
-close KEYWORD3
-openValue KEYWORD3
+distance	LITERAL1
+analog	KEYWORD1
+rotateTo	KEYWORD2
+close	KEYWORD3
+open	KEYWORD3
