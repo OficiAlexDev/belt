@@ -21,3 +21,6 @@
 | `Servo Motor` | 2 | Left - 9 \| Right - 10|x|
 | `Ultrasonic sensor` | 1 | Trigger - 2 \| Echo - 3 |x| 
 | `Infrared sensor` | 1 | 7 | A0|
+| `LCD` | 1 | x | x|
+
+>LDC PINS: VCC, GND, SDA, SCL 
