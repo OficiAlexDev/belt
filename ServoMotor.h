@@ -16,6 +16,8 @@ public:
   void open();
   //CLOSE BY VALUE SETTED IN INIT
   void close();
+  //READ SERVO STATE
+  int servoState();
 private:
   //CHECKS IF IS VALID VALUE (BETWEEN 0 AND 180)
   bool validValue(byte value);

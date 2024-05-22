@@ -36,3 +36,7 @@ void ServoMotor::open() {
 void ServoMotor::close() {
   servo.write(closeValue);
 }
+
+int ServoMotor::servoState() {
+  servo.read();
+}
